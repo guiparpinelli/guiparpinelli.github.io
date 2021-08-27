@@ -1,1 +1,0 @@
-# guiparpinelli.github.io
