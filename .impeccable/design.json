@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T18:00:00Z",
+  "title": "Design System: parpi",
+  "extensions": {
+    "colorMeta": {
+      "amber": {
+        "role": "primary",
+        "displayName": "Sodium amber",
+        "canonical": "#e2a23a",
+        "tonalRamp": [
+          "oklch(15% 0.138 75.4)",
+          "oklch(26% 0.138 75.4)",
+          "oklch(38% 0.138 75.4)",
+          "oklch(50% 0.138 75.4)",
+          "oklch(62% 0.138 75.4)",
+          "oklch(74% 0.138 75.4)",
+          "oklch(85% 0.138 75.4)",
+          "oklch(95% 0.138 75.4)"
+        ]
+      },
+      "stamp-ink": {
+        "role": "neutral",
+        "displayName": "Stamp ink",
+        "canonical": "#1a1408",
+        "tonalRamp": [
+          "oklch(15% 0.024 84.0)",
+          "oklch(26% 0.024 84.0)",
+          "oklch(38% 0.024 84.0)",
+          "oklch(50% 0.024 84.0)",
+          "oklch(62% 0.024 84.0)",
+          "oklch(74% 0.024 84.0)",
+          "oklch(85% 0.024 84.0)",
+          "oklch(95% 0.024 84.0)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Graphite sheet",
+        "canonical": "#1c2328",
+        "tonalRamp": [
+          "oklch(15% 0.014 239.2)",
+          "oklch(26% 0.014 239.2)",
+          "oklch(38% 0.014 239.2)",
+          "oklch(50% 0.014 239.2)",
+          "oklch(62% 0.014 239.2)",
+          "oklch(74% 0.014 239.2)",
+          "oklch(85% 0.014 239.2)",
+          "oklch(95% 0.014 239.2)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Paper ink",
+        "canonical": "#e7e2d6",
+        "tonalRamp": [
+          "oklch(15% 0.017 88.0)",
+          "oklch(26% 0.017 88.0)",
+          "oklch(38% 0.017 88.0)",
+          "oklch(50% 0.017 88.0)",
+          "oklch(62% 0.017 88.0)",
+          "oklch(74% 0.017 88.0)",
+          "oklch(85% 0.017 88.0)",
+          "oklch(95% 0.017 88.0)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary ink",
+        "canonical": "#c5d0d6",
+        "tonalRamp": [
+          "oklch(15% 0.015 231.2)",
+          "oklch(26% 0.015 231.2)",
+          "oklch(38% 0.015 231.2)",
+          "oklch(50% 0.015 231.2)",
+          "oklch(62% 0.015 231.2)",
+          "oklch(74% 0.015 231.2)",
+          "oklch(85% 0.015 231.2)",
+          "oklch(95% 0.015 231.2)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Carbon rule",
+        "canonical": "#8aa4b5",
+        "tonalRamp": [
+          "oklch(15% 0.038 236.8)",
+          "oklch(26% 0.038 236.8)",
+          "oklch(38% 0.038 236.8)",
+          "oklch(50% 0.038 236.8)",
+          "oklch(62% 0.038 236.8)",
+          "oklch(74% 0.038 236.8)",
+          "oklch(85% 0.038 236.8)",
+          "oklch(95% 0.038 236.8)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The word on the ticket." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles." },
+      "title": { "displayName": "Title", "purpose": "The public name under the display word." },
+      "body": { "displayName": "Body", "purpose": "Lede and section prose, max 72ch." },
+      "label": { "displayName": "Label", "purpose": "Field keys. Navigation, stamp, blanks, and the slip share the mono with their own size and tracking." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      { "name": "field-stack", "value": "40rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Status stamp",
+      "kind": "chip",
+      "refersTo": "stamp",
+      "description": "Amber status mark at the end of the mast.",
+      "html": "<span class=\"ds-stamp\">sem produto</span>",
+      "css": ".ds-stamp { display: inline-block; margin: 0; padding: 0.32rem 0.5rem; background: #e2a23a; color: #1a1408; font-family: \"Martian Mono\", ui-monospace, monospace; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; border-radius: 0; } .ds-stamp:focus-visible { outline: 2px solid #e2a23a; outline-offset: 2px; }"
+    },
+    {
+      "name": "Claim slip",
+      "kind": "button",
+      "refersTo": "claim-slip",
+      "description": "The only action, full-bleed under a dashed perforation.",
+      "html": "<a class=\"ds-slip\" href=\"https://github.com/guiparpinelli\">Abrir o GitHub</a>",
+      "css": ".ds-slip { display: flex; align-items: center; box-sizing: border-box; min-height: 44px; padding: 0.65rem 1.25rem; background: #e2a23a; color: #1a1408; font-family: \"Martian Mono\", ui-monospace, monospace; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; border: 0; border-top: 1px dashed #1a1408; border-radius: 0; } .ds-slip:hover { background: #e2a23a; color: #1a1408; } .ds-slip:focus-visible { outline: 2px solid #e2a23a; outline-offset: 2px; }"
+    },
+    {
+      "name": "Navigation link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Mono text link in the top rule row.",
+      "html": "<a class=\"ds-nav\" href=\"#pagina\">Página</a>",
+      "css": ".ds-nav { display: inline-flex; align-items: center; min-height: 44px; background: #1c2328; color: #e7e2d6; font-family: \"Martian Mono\", ui-monospace, monospace; font-size: 0.75rem; font-weight: 400; letter-spacing: 0.04em; text-decoration: none; border-radius: 0; } .ds-nav:hover { color: #e7e2d6; } .ds-nav:focus-visible { outline: 2px solid #e2a23a; outline-offset: 2px; }"
+    },
+    {
+      "name": "Field row",
+      "kind": "custom",
+      "refersTo": "field",
+      "description": "A key and a value separated by the carbon rule.",
+      "html": "<div class=\"ds-field\"><div class=\"ds-key\">Nome</div><div class=\"ds-value\">Guilherme Parpinelli</div></div>",
+      "css": ".ds-field { display: grid; grid-template-columns: 9rem minmax(0, 1fr); column-gap: 1rem; align-items: baseline; padding: 0.7rem 0 0.85rem; border-top: 1px solid #8aa4b5; background: #1c2328; } .ds-key { margin: 0; color: #c5d0d6; font-family: \"Martian Mono\", ui-monospace, monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; line-height: 1.3; text-transform: uppercase; } .ds-value { margin: 0; color: #e7e2d6; font-family: \"Familjen Grotesk\", sans-serif; font-size: 1.15rem; letter-spacing: 0; }"
+    },
+    {
+      "name": "Blank field",
+      "kind": "custom",
+      "refersTo": "field-blank",
+      "description": "An empty fact drawn as a mono mark on a carbon underline.",
+      "html": "<div class=\"ds-field\"><div class=\"ds-key\">Produto</div><div class=\"ds-blank\">em branco</div></div>",
+      "css": ".ds-field { display: grid; grid-template-columns: 9rem minmax(0, 1fr); column-gap: 1rem; align-items: baseline; padding: 0.7rem 0 0.85rem; border-top: 1px solid #8aa4b5; background: #1c2328; } .ds-key { margin: 0; color: #c5d0d6; font-family: \"Martian Mono\", ui-monospace, monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; line-height: 1.3; text-transform: uppercase; } .ds-blank { margin: 0; color: #e7e2d6; font-family: \"Martian Mono\", ui-monospace, monospace; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.02em; border-bottom: 1px solid #8aa4b5; padding-bottom: 0.2rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Carbon Job Ticket",
+    "overview": "The page is one carbon work ticket printed on a graphite sheet. The sheet is the ground. A single carbon-blue rule separates the ticket from the sections under it and draws every field. Sodium amber is the ink of the status stamp and the perforated claim slip, and it appears nowhere else. Prose and the display word are a grotesque; keys, the stamp, the navigation, and the slip are a mono.\n\nDensity is a form, not a dashboard. One column, short sections, and empty facts drawn as blank rules. The page does not move. Focus is a 2px amber outline. There is no radius and no shadow.\n\nThe direction asked for the sheet to sit on a darker ground. The shipped page makes the sheet the background. A darker track color exists only on the scrollbar and is not part of this system.",
+    "keyCharacteristics": [
+      "Graphite sheet as the page ground",
+      "Sodium amber only on the stamp and the claim slip",
+      "One 1px carbon-blue rule",
+      "Grotesque for prose and display, mono for keys, stamp, navigation, and the slip",
+      "Empty facts drawn as a blank rule",
+      "No radius, no shadow, no motion"
+    ],
+    "rules": [
+      {
+        "name": "The Amber Rarity Rule",
+        "body": "Amber is the stamp, the claim slip, selection, caret, and focus. It is not a fill for sections, links, or body type.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Stroke Rule",
+        "body": "Dividers, field rules, and the blank underline are a 1px solid carbon rule. The claim slip is the only dashed stroke, and that dash is stamp ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Split Voice Rule",
+        "body": "Familjen Grotesk sets display, headlines, prose, and filled values. Martian Mono sets keys, the stamp, navigation, blank values, and the claim slip.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Ticket Rule",
+        "body": "No box-shadow. A new surface is a rule or an amber band, not a lift.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the sheet as the page ground and separate bands with one 1px carbon rule.",
+      "Do reserve amber for the stamp, the claim slip, selection, caret, and focus.",
+      "Do set keys, the stamp, navigation, blank values, and the slip in Martian Mono, and prose plus display in Familjen Grotesk.",
+      "Do draw an empty fact as a mono mark on a carbon underline.",
+      "Do keep keyboard focus as a 2px amber outline with 2px offset.",
+      "Do keep the claim slip full-bleed to the sheet, with a dashed stamp-ink perforation."
+    ],
+    "donts": [
+      "Don't add radius, shadow, transition, or animation.",
+      "Don't use amber as a section fill, a link color, or body text.",
+      "Don't invent a second rule weight. The dashed perforation is the only exception, and it stays 1px.",
+      "Don't put filled values in the mono. The mono marks keys and blanks."
+    ]
+  }
+}

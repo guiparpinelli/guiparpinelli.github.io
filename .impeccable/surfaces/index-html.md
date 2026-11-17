@@ -21,7 +21,7 @@ STORY: The visitor reads who parpi is, sees the product and mail fields drawn em
 
 FIRST VIEWPORT: One ticket sheet, not a floating card. Header is the word parpi at display scale with Guilherme Parpinelli on the same plate. Under it, a field grid (nome, marca, produto em branco, destino). The claim slip sits on the perforation at the bottom of that first sheet and is a real link. No eyebrow, no prompt cursor, no install row.
 
-FORM: Guia de trabalho a carbono, sixth on the ordered list. Seed key 875cd73e. Material translated into the pinned terminal register: ticket topology, terminal ink. Raises: understory, the sheet is the ground; cape, one control only; ligne claire, one stroke weight; seven-segment, absence is drawn.
+FORM: Guia de trabalho a carbono, sixth on the ordered grounded list (not challenger 6). Seed key 875cd73e. Material translated into the pinned terminal register: ticket topology, terminal ink. Raises: understory, the sheet is the ground; cape, one control only; ligne claire, one stroke weight; seven-segment, absence is drawn.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 
